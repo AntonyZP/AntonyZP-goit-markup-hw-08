@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-For HW GoIT
+# goit-markup-hw
+
+For GoIT
