@@ -9,49 +9,105 @@
 }
 
 .footer__container {
-    padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-    align-items: baseline;
+        padding-top: 60px;
+        text-align: center;
+
+    @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
+                     display: flex;
+                    flex-wrap: wrap;
+                     align-items: baseline;                     
+                }
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+
+.footer__block {
+    @media screen and (min-width: 768px) {
+        padding-left: 61px;
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+    
+        @media screen and (min-width: 1200px) {
+            padding-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+   
 }
 
 .footer-contact {
+    margin-bottom: 60px;
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        
+          
 }
 
 .footer-contact__address {
-    color: var(--white-cl);
+        color: var(--white-cl);
 }
-
-
 
 .footer-contact .link {
     transition: color var(--dur-tf);
-
     &:hover,
-    &:focus {color: var(--accent-txt-cl);
-        }         
+    &:focus {
+        color: var(--accent-txt-cl);
     }
+}
 
 
 .footer-contact__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer__join {
-    margin-left: 70px;
-    margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+    
+    @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+                margin-right: 93px;
+    }
+  
 }
 
 .footer__subtitle {
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-cl);
-}
+        font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--white-cl);
+    @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width: 1200px) {            
+        }
+   }
 
+   .footer__block-form {
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+                margin-left: auto;
+        }
+ @media screen and (min-width: 1200px) {margin-right: 0;
+    margin-left: 0;}
+   }
