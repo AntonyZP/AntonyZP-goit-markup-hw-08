@@ -17,5 +17,16 @@
 }
 
 .header__logo {
-    margin-right: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+    
 }

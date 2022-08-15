@@ -27,18 +27,23 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo link" href="index.html"
           ><span class="logo__web">Web</span><span class="logo__studio-header">Studio</span></a
         >
+        <button class="menu-button" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link link" href="./index.html">Студія</a>
+              <a class="nav__link nav__link link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link--current link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
           </ul>
@@ -66,7 +71,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Main -->
     <main class="page-main">
       <!-- our projects    -->
@@ -98,7 +103,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/people.jpg"
+                    src="./images/portfolio/people.jpg"
                     alt="Список сотрудников разработанного сайта"
                     width="370"
                   />
@@ -122,7 +127,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/basketball.jpg"
+                    src="./images/portfolio/basketball.jpg"
                     alt="Два баскетболиста"
                     width="370"
                   />
@@ -146,7 +151,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/restaurant.jpg"
+                    src="./images/portfolio/restaurant.jpg"
                     alt="Логотип ресторана"
                     width="370"
                   />
@@ -168,7 +173,12 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="projects__card">
-                  <img class="projects__img" src="./images/bits.jpg" alt="Наушники" width="370" />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio/bits.jpg"
+                    alt="Наушники"
+                    width="370"
+                  />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -190,7 +200,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/box.jpg"
+                    src="./images/portfolio/box.jpg"
                     alt="Две коробочки"
                     width="370"
                   />
@@ -214,7 +224,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/monitor.jpg"
+                    src="./images/portfolio/monitor.jpg"
                     alt="Монитор с картой мира"
                     width="370"
                   />
@@ -236,7 +246,12 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="projects__card">
-                  <img class="projects__img" src="./images/book.jpg" alt="Книга" width="370" />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio/book.jpg"
+                    alt="Книга"
+                    width="370"
+                  />
 
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -257,7 +272,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/birka.jpg"
+                    src="./images/portfolio/birka.jpg"
                     alt="Бирка с названием проекта"
                     width="370"
                   />
@@ -281,7 +296,7 @@
                 <div class="projects__card">
                   <img
                     class="projects__img"
-                    src="./images/laptop.jpg"
+                    src="./images/portfolio/laptop.jpg"
                     alt="Работа за ноутбуком"
                     width="370"
                   />
@@ -406,7 +421,49 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay is-open" data-menu>
+      <div class="menu-container">
+        <ul class="mobile-nav list">
+          <li class="mobile-nav-item">
+            <a class="mobile-link link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-link link" href="">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-contacts">
+          <a class="mobile-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="mobile-mail link" href="mialto:info@devstudio.com">info@devstudio.com</a>
+          <button class="menu-button-close" type="button" data-menu-close>
+            <svg class="menu-button-close-icon" width="40" height="40">
+              <use href="./images/icons.svg#nav-button-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item">
+            <a class="menu-socials-link link" href="">Instagram</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="menu-socials-link link" href="">Twitter</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="menu-socials-link link" href="">Facebook</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="menu-socials-link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- script -->
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
