@@ -725,16 +725,24 @@ p {
           flex-direction: column;
   gap: 32px;
   margin-bottom: 64px;
+  margin-top: 15px;
 }
 
 .mobile-phone {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
 }
+@media screen and (max-width: 380px) {
+  .mobile-phone {
+    font-size: 22px;
+  }
+}
 
 .mobile-mail {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -995,7 +1003,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
   font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
@@ -1040,7 +1047,7 @@ p {
 }
 
 .features__item {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .features__item {
