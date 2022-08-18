@@ -585,10 +585,6 @@ p {
   background-color: var(--accent-txt-cl);
 }
 
-.footer__join .social__icon {
-  fill: var(--white-cl);
-}
-
 .socials__icon {
   fill: #afb1b8;
   -webkit-transition: fill var(--dur-tf);
@@ -596,6 +592,10 @@ p {
 }
 .socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: #ffffff;
+}
+
+.footer__join .socials__icon {
+  fill: var(--white-cl);
 }
 
 .menu-button {

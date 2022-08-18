@@ -26,9 +26,6 @@
     
 }
 
-.footer__join .social__icon {
-    fill: var(--white-cl);
-}
 
 .socials__icon {
     fill: #afb1b8;
@@ -40,4 +37,7 @@
         }
 }
 
+.footer__join .socials__icon {
+    fill: var(--white-cl);
+}
 
