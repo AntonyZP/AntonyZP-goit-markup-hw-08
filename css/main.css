@@ -96,7 +96,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1010,6 +1010,11 @@ p {
   text-transform: uppercase;
   color: var(--white-cl);
   /* margin-top: 0; */
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
